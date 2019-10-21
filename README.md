@@ -1,4 +1,4 @@
-# CLEO
-Coroutine Lazy Evaluation 3D Objects
+# CLC3DO
+Coroutine Lazy Computation 3D Objects
 
-Uses C++20 coroutines to implement lazy evaluation for Objects with large or infinite size.
+Uses C++20 coroutines to implement lazy computation for Objects with large or infinite size.
