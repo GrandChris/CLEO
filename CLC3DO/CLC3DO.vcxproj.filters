@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Headerdateien\Coroutine">
-      <UniqueIdentifier>{d8ccaffe-d407-49bc-bece-34abc5e3e080}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Headerdateien\Objects">
       <UniqueIdentifier>{ebc00357-be32-4e89-b129-f934a6458798}</UniqueIdentifier>
     </Filter>
@@ -26,18 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CoIterator.h">
-      <Filter>Headerdateien\Coroutine</Filter>
-    </ClInclude>
-    <ClInclude Include="Generator.h">
-      <Filter>Headerdateien\Coroutine</Filter>
-    </ClInclude>
-    <ClInclude Include="Promise.h">
-      <Filter>Headerdateien\Coroutine</Filter>
-    </ClInclude>
-    <ClInclude Include="Coroutine.h">
-      <Filter>Headerdateien\Coroutine</Filter>
-    </ClInclude>
     <ClInclude Include="Circle.h">
       <Filter>Headerdateien\Objects</Filter>
     </ClInclude>

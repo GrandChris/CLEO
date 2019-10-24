@@ -122,7 +122,7 @@ void drawStuff()
 #ifdef _DEBUG 
 	auto points = take(filledCirlce, 15'000);
 #else
-	auto points = take(filledCirlce, 15'000'000);
+	auto points = take(filledCirlce, 15'000'000/10);
 #endif
 
 	auto vertices = generateVertices(points);
@@ -157,8 +157,13 @@ void drawStuff()
 
 	//draw
 	auto const app = ParticleRenderer::createVulkan();
+
+
 	auto rendObj = TwoPointMovingRenderObject::createVulkan();
 	rendObj->setVertices(vertexVec);
+
+	//app->setWindowSize(2560, 1440);
+	app->setVSync(true);
 
 	app->add(std::move(rendObj));
 	app->run();
@@ -176,6 +181,11 @@ int main()
 }
 
 
+int WinMain()
+{
+	main();
 
+	return 0;
+}
 
 
