@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLC3DO", "CLC3DO.vcxproj", "{E5FB792F-9C26-4D7C-B3CE-1ADEA10D333D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VulkanErruption", "..\..\..\VisualStudio\VulkanErruption\VulkanErruption\VulkanErruption.vcxproj", "{BEF6CEBB-F560-4556-A86E-C06FCB7FED70}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VulkanErruption", "..\VulkanErruption\VulkanErruption\VulkanErruption.vcxproj", "{BEF6CEBB-F560-4556-A86E-C06FCB7FED70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

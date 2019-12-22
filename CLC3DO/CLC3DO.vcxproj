@@ -81,12 +81,12 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <CodeAnalysisRuleSet>CppCoreCheckExperimentalRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>G:\VisualStudio\VulkanErruption\VulkanErruption\extern\glm-0.9.9.5\glm;G:\VisualStudio\VulkanErruption\VulkanErruption;$(IncludePath)</IncludePath>
+    <IncludePath>..\glm;..\VulkanErruption\VulkanErruption\include;..\Coroutine\Coroutine;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <CodeAnalysisRuleSet>CppCoreCheckExperimentalRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>G:\git\Coroutine\Coroutine;G:\VisualStudio\VulkanErruption\VulkanErruption\extern\glm-0.9.9.5\glm;G:\VisualStudio\VulkanErruption\VulkanErruption;$(IncludePath)</IncludePath>
+    <IncludePath>..\glm;..\VulkanErruption\VulkanErruption\include;..\Coroutine\Coroutine;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -110,7 +110,8 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <EnableModules>true</EnableModules>
+      <EnableModules>false</EnableModules>
+      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +145,8 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <EnableModules>true</EnableModules>
+      <EnableModules>false</EnableModules>
+      <AdditionalOptions>/await %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -163,7 +165,7 @@
     <ClInclude Include="Object.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\VisualStudio\VulkanErruption\VulkanErruption\VulkanErruption.vcxproj">
+    <ProjectReference Include="..\VulkanErruption\VulkanErruption\VulkanErruption.vcxproj">
       <Project>{bef6cebb-f560-4556-a86e-c06fcb7fed70}</Project>
     </ProjectReference>
   </ItemGroup>

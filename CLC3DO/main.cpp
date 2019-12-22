@@ -9,7 +9,7 @@
 #include <ParticleRenderer.h>
 #include <TwoPointMovingRenderObject.h>
 
-#include "Coroutine.h"
+#include <Coroutine.h>
 #include "Circle.h"
 #include "HalfCircle.h"
 #include "MultiObject.h"
@@ -122,7 +122,7 @@ void drawStuff()
 #ifdef _DEBUG 
 	auto points = take(filledCirlce, 15'000);
 #else
-	auto points = take(filledCirlce, 15'000'000/10);
+	auto points = take(filledCirlce, 15'000'000);
 #endif
 
 	auto vertices = generateVertices(points);
@@ -161,9 +161,10 @@ void drawStuff()
 
 	auto rendObj = TwoPointMovingRenderObject::createVulkan();
 	rendObj->setVertices(vertexVec);
+	rendObj->setPosition({ -4.0f, 0.0f, 0.0f });
 
 	//app->setWindowSize(2560, 1440);
-	app->setVSync(true);
+	//app->setVSync(true);
 
 	app->add(std::move(rendObj));
 	app->run();
